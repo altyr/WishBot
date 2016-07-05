@@ -1,0 +1,139 @@
+  body {
+   font-family: Copperplate,Copperplate Gothic Light,fantasy;
+   background: #DD9492;
+  }
+
+  #main {
+   margin: 0px;
+   padding: 0px;
+   display: -webkit-flex;
+   display:         flex;
+   -webkit-flex-flow: row;
+           flex-flow: row;
+   }
+ 
+  #main > article {
+   margin: 5px;
+   padding: 5px;
+   text-align: center;
+   background-color: #EEC3C2;
+   -webkit-flex: 50%;
+           flex: 50%;
+   -webkit-order: 1;
+           order: 1;
+   }
+  
+  #main > aside {
+   margin: 5px;
+   padding: 5px;
+   background-color: #EEB3B1;
+   -webkit-flex: 50%;
+           flex: 50%;
+   -webkit-order: 2;
+           order: 2;
+   }
+   
+   #main1 {
+   margin: 0px;
+   padding: 0px;
+   display: -webkit-flex;
+   display:         flex;
+   -webkit-flex-flow: row;
+           flex-flow: row;
+   }
+   
+   #main1 > aside {
+   margin: 5px;
+   padding: 5px;
+   background-color: #EEB3B1;
+   -webkit-flex: 50%;
+           flex: 50%;
+   -webkit-order: 1;
+           order: 1;
+   }
+   
+   #main1 > article {
+   margin: 5px;
+   padding: 5px;
+   text-align: center;
+   background-color: #EEC3C2;
+   -webkit-flex: 50%;
+           flex: 50%;
+   -webkit-order: 2;
+           order: 2;
+   }
+
+   @media screen and (max-width: 640px) {
+    #main {
+      -webkit-flex-flow: column;
+              flex-flow: column;
+    }
+      ul.grid-nav li {
+      display: block;
+      margin: 0 0 5px;
+      }
+      ul.grid-nav li a {
+      display: block;
+      }
+      ul.rig {
+      margin-left: 0;
+      }
+      ul.rig li {
+      width: 100% !important; /* over-ride all li styles */
+      margin: 0 0 20px;
+      }
+      img.banner {
+        width: 75%;
+        height: auto;
+      }
+   }
+
+	img.banner {
+	 display: block; /* These three lines of code allow the image to be centred */
+     margin-left: auto; 
+     margin-right: auto;
+     padding: 5px;
+	 width: 100%;
+	 height: auto;
+	 max-width: 500px;
+	}
+  
+  header {
+    display: block;
+    margin: 4px;
+    padding: 5px;
+    min-height: 100px;
+    background: #bfbfbf;
+  }
+   
+  footer {
+    display: block;
+    margin: 4px;
+    padding: 5px;
+    min-height: 50px;
+    background: #bfbfbf;
+   }
+   
+   ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		overflow: hidden;
+   }
+   
+   li {
+		display: inline;
+		padding: 5px;
+   }
+   
+   a:link, a:visited {
+    display: inline-block;
+    width: 80px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
