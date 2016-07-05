@@ -1,4 +1,5 @@
 // IE cannot apply CSS transforms on SVG elements. (See https://connect.microsoft.com/IE/feedback/details/811744/ie11-bug-with-implementation-of-css-transforms-in-svg)
+import anime from 'animejs'
 
 var path = anime.path('path');
 
