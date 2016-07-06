@@ -68,6 +68,10 @@
       -webkit-flex-flow: column;
               flex-flow: column;
     }
+	#main1 {
+      -webkit-flex-flow: column;
+              flex-flow: column;
+    }
       ul.grid-nav li {
       display: block;
       margin: 0 0 5px;
@@ -82,13 +86,28 @@
       width: 100% !important; /* over-ride all li styles */
       margin: 0 0 20px;
       }
-      img.banner {
+      img.onee-icon {
         width: 75%;
         height: auto;
       }
+	  img.onee-sit {
+		width: 75%;
+		height: auto;
+	  }
    }
 
-	img.banner {
+	img.onee-icon {
+	 display: block; /* These three lines of code allow the image to be centred */
+     margin-left: auto; 
+     margin-right: auto;
+     padding: 5px;
+	 width: 100%;
+	 height: auto;
+	 max-width: 500px;
+	 border-radius: 25px;
+	}
+	
+	img.onee-sit {
 	 display: block; /* These three lines of code allow the image to be centred */
      margin-left: auto; 
      margin-right: auto;
