@@ -62,6 +62,7 @@ bot.on("ready", () => {
 bot.on("messageCreate", msg => {
     if ((msg.author.bot && msg.author.id !== "174669219659513856") || !msg.channel.guild) return;
     else {
+		if (msg.content.startsWith("**<")) msg.content = msg.content.split(">**")[1];
         let msgPrefix = Database.checkPrefix(msg.channel.guild) != undefined ? Database.checkPrefix(msg.channel.guild) : options.prefix;
         if (msg.content === "(╯°□°）╯︵ ┻━┻") Database.checkSetting(msg.channel.guild, 'tableflip').then(() => bot.createMessage(msg.channel.id, tablesUnFlipped[Math.floor(Math.random() * (tablesUnFlipped.length))])).catch()
         if (msg.content.split(" ")[0] === "sudo" && msg.author.id === "87600987040120832") evalText(msg, msg.content.substring((msg.content.split(" ")[0].substring(1)).length + 2));
