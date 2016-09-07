@@ -60,7 +60,7 @@ bot.on("ready", () => {
 })
 
 bot.on("messageCreate", msg => {
-    if ((msg.author.bot && msg.author.id !== "174669219659513856") || !msg.channel.guild) return;
+    if (!msg.channel.guild) return;
     else {
         if (msg.content.startsWith("**<")) msg.content = msg.content.split(">** ")[1];
         let msgPrefix = Database.checkPrefix(msg.channel.guild) != undefined ? Database.checkPrefix(msg.channel.guild) : options.prefix;
