@@ -10,10 +10,10 @@ let mysql = require('mysql'),
     });
 
 module.exports = {
-    usage: 'Returns a random image of a loli.\n[Command Created by Florestina]',
+    usage: 'Returns a random image of a Strike Witch',
     cooldown: 5,
     process: (bot, msg) => {
-        pool.query('SELECT * FROM loli ORDER BY RAND() LIMIT 1', (err, rows, res) => {
+        pool.query('SELECT * FROM witch ORDER BY RAND() LIMIT 1', (err, rows, res) => {
             if (err) console.log(errorC('Error while performing Query'));
             else bot.createMessage(msg.channel.id, rows[0].url).catch();
         });
